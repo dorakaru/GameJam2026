@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Money : MonoBehaviour
 {
@@ -13,6 +15,9 @@ public class Money : MonoBehaviour
     [Header("老人怒り時の肩たたき一回につき減るお年玉の金額　※編集用")]
     [SerializeField] private int _downMoneyValue;
 
+    [Header("")]
+    [SerializeField] TextMeshProUGUI moneyText;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +29,7 @@ public class Money : MonoBehaviour
     void Update()
     {
         _checkPlayerMoney = playerMoney;
+        moneyText.text = playerMoney.ToString();
     }
 
     //お年玉増加処理
