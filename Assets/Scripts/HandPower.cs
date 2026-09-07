@@ -34,7 +34,9 @@ public class HandPower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //機嫌メーターの上昇値の計算式
         _powerMeterAddValue = Mathf.Pow(baseOfExponentValue, currentPowerMeter) + exponentAddValue;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             UpPowerValue();
