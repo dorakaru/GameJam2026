@@ -166,9 +166,10 @@ MonoBehaviour:
   currentPowerMeter: 0
   currentPowerMeterUpValue: 0
   powerMeterMax: 100
-  baseOfExponentValue: 0.9
-  exponentAddValue: 1
-  powerMeterDownValue: 1
+  baseOfExponentValue: 0.8
+  exponentAddValue: 1.5
+  powerMeterDownValue: 5
+  handController: {fileID: 0}
 --- !u!1 &1495343001
 GameObject:
   m_ObjectHideFlags: 0
