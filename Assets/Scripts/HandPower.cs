@@ -22,6 +22,9 @@ public class HandPower : MonoBehaviour
     [Header("機嫌メーターの毎秒の減少値　※編集用")]
     public float powerMeterDownValue;
 
+    [Header("")]
+    [SerializeField] HandController handController;
+
     //機嫌メーターの上昇値の計算
     float _powerMeterAddValue;
     
@@ -37,7 +40,7 @@ public class HandPower : MonoBehaviour
         //機嫌メーターの上昇値の計算式
         _powerMeterAddValue = Mathf.Pow(baseOfExponentValue, currentPowerMeter) + exponentAddValue;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (handController.SuccessfulHit)
         {
             UpPowerValue();
         }
