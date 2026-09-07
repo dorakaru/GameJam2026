@@ -22,6 +22,8 @@ public class HandPower : MonoBehaviour
     [Header("機嫌メーターの毎秒の減少値　※編集用")]
     public float powerMeterDownValue;
 
+    //機嫌メーターの上昇値の計算
+    float _powerMeterAddValue;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +34,7 @@ public class HandPower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _powerMeterAddValue = Mathf.Pow(baseOfExponentValue, currentPowerMeter) + exponentAddValue;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             UpPowerValue();
@@ -46,12 +49,12 @@ public class HandPower : MonoBehaviour
             currentPowerMeter = 0;
         }
 
-        currentPowerMeterUpValue = Mathf.Pow(baseOfExponentValue, currentPowerMeter) + exponentAddValue;
+        currentPowerMeterUpValue = _powerMeterAddValue;
     }
 
     void UpPowerValue()
     {
-        currentPowerMeter += Mathf.Pow(baseOfExponentValue, currentPowerMeter) + exponentAddValue;
+        currentPowerMeter += _powerMeterAddValue;
     }
 
     void DownPowerMeter()
