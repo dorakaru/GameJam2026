@@ -1,0 +1,717 @@
+fileFormatVersion: 2
+guid: ad95e4e689c7b3142976276e2430d883
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6299871621265835958
+    second: envlope5_0
+  - first:
+      213: -520976124827348922
+    second: envlope5_1
+  - first:
+      213: -5884233131243762549
+    second: envlope5_2
+  - first:
+      213: -7924955014182831124
+    second: envlope5_3
+  - first:
+      213: 1211371422459434770
+    second: envlope5_4
+  - first:
+      213: -6799453642482272955
+    second: envlope5_5
+  - first:
+      213: -4883344106521060013
+    second: envlope5_6
+  - first:
+      213: 2553217467632455141
+    second: envlope5_7
+  - first:
+      213: 6144034496047730702
+    second: envlope5_8
+  - first:
+      213: 4829754247903034520
+    second: envlope5_9
+  - first:
+      213: -6316452711373495885
+    second: envlope5_10
+  - first:
+      213: -6270342657068332962
+    second: envlope5_11
+  - first:
+      213: 7555570502922155300
+    second: envlope5_12
+  - first:
+      213: 6054906224027483512
+    second: envlope5_13
+  - first:
+      213: -3097067886602321110
+    second: envlope5_14
+  - first:
+      213: -6931122589519474420
+    second: envlope5_15
+  - first:
+      213: 9091985471034729427
+    second: envlope5_16
+  - first:
+      213: 8990222838188155274
+    second: envlope5_17
+  - first:
+      213: -5659499449853468935
+    second: envlope5_18
+  - first:
+      213: 5193866010123590237
+    second: envlope5_19
+  - first:
+      213: -4594766122226468131
+    second: envlope5_20
+  - first:
+      213: -1326911672012203894
+    second: envlope5_21
+  - first:
+      213: -6072659458592138121
+    second: envlope5_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: envlope5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1492
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a48b2eb732c5298a0800000000000000
+      internalID: -6299871621265835958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 253
+        width: 1086
+        height: 1958
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640d43789fe15c8f0800000000000000
+      internalID: -520976124827348922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_2
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 1213
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c81a4a421075ea0800000000000000
+      internalID: -5884233131243762549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_3
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 1203
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb7eae1767e40290800000000000000
+      internalID: -7924955014182831124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_4
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 1190
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21711cef3e7afc010800000000000000
+      internalID: 1211371422459434770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_5
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1195
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545bb1defec73a1a0800000000000000
+      internalID: -6799453642482272955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_6
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1184
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d90de7860ea3cb0800000000000000
+      internalID: -4883344106521060013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_7
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1177
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed0e8062c9de6320800000000000000
+      internalID: 2553217467632455141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_8
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1157
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00dba852def34550800000000000000
+      internalID: 6144034496047730702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_9
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1177
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89cb1ba36ebb60340800000000000000
+      internalID: 4829754247903034520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_10
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1172
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b1a70a99b37758a0800000000000000
+      internalID: -6316452711373495885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_11
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 1143
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58867933944bf8a0800000000000000
+      internalID: -6270342657068332962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_12
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1130
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425381e5757cad860800000000000000
+      internalID: 7555570502922155300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_13
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1153
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87db5776129570450800000000000000
+      internalID: 6054906224027483512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_14
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 1125
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a238cc58a210505d0800000000000000
+      internalID: -3097067886602321110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_15
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1141
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01910d3ab4bfcf90800000000000000
+      internalID: -6931122589519474420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_16
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1138
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3a9005d983d2e70800000000000000
+      internalID: 9091985471034729427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_17
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1086
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a812fc10a00b3cc70800000000000000
+      internalID: 8990222838188155274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_18
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1086
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe17f45c3b6571b0800000000000000
+      internalID: -5659499449853468935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_19
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1078
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a54603e91541840800000000000000
+      internalID: 5193866010123590237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_20
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1064
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda31b25e8c1c30c0800000000000000
+      internalID: -4594766122226468131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_21
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1058
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8894655ddcd59de0800000000000000
+      internalID: -1326911672012203894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envlope5_22
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 145
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c13b0956499bba0800000000000000
+      internalID: -6072659458592138121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      envlope5_0: -6299871621265835958
+      envlope5_1: -520976124827348922
+      envlope5_10: -6316452711373495885
+      envlope5_11: -6270342657068332962
+      envlope5_12: 7555570502922155300
+      envlope5_13: 6054906224027483512
+      envlope5_14: -3097067886602321110
+      envlope5_15: -6931122589519474420
+      envlope5_16: 9091985471034729427
+      envlope5_17: 8990222838188155274
+      envlope5_18: -5659499449853468935
+      envlope5_19: 5193866010123590237
+      envlope5_2: -5884233131243762549
+      envlope5_20: -4594766122226468131
+      envlope5_21: -1326911672012203894
+      envlope5_22: -6072659458592138121
+      envlope5_3: -7924955014182831124
+      envlope5_4: 1211371422459434770
+      envlope5_5: -6799453642482272955
+      envlope5_6: -4883344106521060013
+      envlope5_7: 2553217467632455141
+      envlope5_8: 6144034496047730702
+      envlope5_9: 4829754247903034520
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

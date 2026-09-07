@@ -3,9 +3,9 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     [Header("êßå¿éûä‘")]
-    [SerializeField] float timeLimit;
+    [SerializeField] private float timeLimit;
 
-    [SerializeField] float timer;
+    [SerializeField] private float timer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

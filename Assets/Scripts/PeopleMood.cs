@@ -3,13 +3,14 @@ using UnityEngine;
 public class PeopleMood : MonoBehaviour
 {
     [Header("老人のお花状態突入割合(%表記)　※編集用")]
-    public float flowerPercentage;
+    [SerializeField] private float flowerPercentage;
 
     [Header("老人の困り顔突入割合(%表記)　※編集用")]
-    public float troubledFacePercentage;
+    [SerializeField] private float troubledFacePercentage;
+    [SerializeField] GameObject troubledFaceEffect;
 
     [Header("老人の怒り突入割合(%表記)　※編集用")]
-    public float angerPercentage;
+    [SerializeField] private float angerPercentage;
 
     [Header("")]
     [SerializeField] HandController handController;
