@@ -45,7 +45,7 @@ public class PeopleMood : MonoBehaviour
         { //機嫌メーターが老人の怒り突入割合を越えた場合に処理
 
             //エフェクト表示
-            DisplayEffect(flowerEffect);
+            DisplayEffect(angerEffect);
 
             //肩を叩けたときに実行
             if (handController.SuccessfulHit)
@@ -55,6 +55,10 @@ public class PeopleMood : MonoBehaviour
         }
         else if (powerMeter.currentPowerMeter / powerMeter.powerMeterMax * 100 >= _troubledFacePercentage)
         { //機嫌メーターが老人の困り顔突入割合を越えた場合に処理
+
+            //エフェクト表示
+            DisplayEffect(troubledFaceEffect);
+
             //肩を叩けたときに実行
             if (handController.SuccessfulHit)
             {
@@ -63,6 +67,10 @@ public class PeopleMood : MonoBehaviour
         }
         else if (powerMeter.currentPowerMeter / powerMeter.powerMeterMax * 100 >= _flowerPercentage)
         { //機嫌メーターが老人のお花状態突入割合を越えた場合に処理
+
+            //エフェクト表示
+            DisplayEffect(flowerEffect);
+
             //肩を叩けたときに実行
             if (handController.SuccessfulHit)
             {
