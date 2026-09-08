@@ -69,7 +69,7 @@ public class PeopleMood : MonoBehaviour
             //å®Çí@ÇØÇΩÇ∆Ç´Ç…é¿çs
             if (handController.SuccessfulHit)
             {
-                money.UpMoneyValue();
+                money.TroubledFaceUpMoneyValue();
             }
         }
         else if (powerMeter.currentPowerMeter / powerMeter.powerMeterMax * 100 >= _flowerPercentage)
@@ -81,7 +81,7 @@ public class PeopleMood : MonoBehaviour
             //å®Çí@ÇØÇΩÇ∆Ç´Ç…é¿çs
             if (handController.SuccessfulHit)
             {
-                money.UpMoneyValue();
+                money.FlowerMoodUpMoneyValue();
             }
         }
         else

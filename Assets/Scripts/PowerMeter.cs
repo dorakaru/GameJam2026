@@ -29,6 +29,12 @@ public class PowerMeter : MonoBehaviour
     [Header("指数関数にかける数(y=a^x*bのbの値)　※編集用")]
     [SerializeField] private float _downExponentMultiValue;
 
+    [Header("減少値の二次関数の比例定数　※編集用")]
+    [SerializeField] private float _quadraticValue;
+
+    [Header("二次関数の処理に変えるボタン")]
+    [SerializeField] private bool chageValue;
+
     [Header("現在の機嫌メーター減少値　※確認用")]
     [SerializeField] private float _currentPowerMeterDownValue;
 
@@ -54,7 +60,10 @@ public class PowerMeter : MonoBehaviour
         //機嫌メーターの上昇値の計算式
         _powerMeterUpValue = Mathf.Pow(_baseOfExponentUpValue, currentPowerMeter) + _upExponentAddValue;
         //機嫌メーターの減少値の計算式
-        _powerMeterDownValue = Mathf.Pow(_baseOfExponentDownValue, currentPowerMeter) * _downExponentMultiValue;
+        if (!chageValue)
+            _powerMeterDownValue = Mathf.Pow(_baseOfExponentDownValue, currentPowerMeter) * _downExponentMultiValue;
+        else
+            _powerMeterDownValue = Mathf.Pow(currentPowerMeter, 2) * _quadraticValue;
 
         //肩を叩けたときに実行
         if (handController.SuccessfulHit)

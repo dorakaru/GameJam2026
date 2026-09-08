@@ -12,6 +12,12 @@ public class Money : MonoBehaviour
     [Header("肩たたき一回につき増えるお年玉の金額　※編集用")]
     [SerializeField] private int _upMoneyValue;
 
+    [Header("老人がお花状態の時に増えるお年玉の金額　※編集用")]
+    [SerializeField] private int _flowerUpMoneyValue;
+
+    [Header("老人が困り顔の時に増えるお年玉の金額　※編集用")]
+    [SerializeField] private int _troubledFaceUpMoneyValue;
+
     [Header("老人怒り時の肩たたき一回につき減るお年玉の金額　※編集用")]
     [SerializeField] private int _downMoneyValue;
 
@@ -36,6 +42,17 @@ public class Money : MonoBehaviour
     public void UpMoneyValue()
     {
         playerMoney += _upMoneyValue;
+    }
+
+    //お花状態お年玉増加処理
+    public void FlowerMoodUpMoneyValue()
+    {
+        playerMoney += _flowerUpMoneyValue;
+    }
+
+    public void TroubledFaceUpMoneyValue()
+    {
+        playerMoney += _troubledFaceUpMoneyValue;
     }
 
     //お年玉減少処理
