@@ -737,10 +737,13 @@ MonoBehaviour:
   checkCurrentPowerMeter: 0
   _currentPowerMeterUpValue: 0
   _editPowerMeterMax: 100
-  _baseOfExponentUpValue: 0.6
-  _upExponentAddValue: 2
-  _baseOfExponentDownValue: 1.1
-  _downExponentMultiValue: 0.01
+  _baseOfExponentUpValue: 0.9
+  _upExponentAddValue: 1
+  _baseOfExponentDownValue: 0
+  _downExponentMultiValue: 0
+  _quadraticValue: 0.001
+  _quadraticAddValue: 1
+  chageValue: 1
   _currentPowerMeterDownValue: 0
   handController: {fileID: 1397935752}
 --- !u!114 &471482544
@@ -757,6 +760,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Money
   _checkPlayerMoney: 0
   _upMoneyValue: 100
+  _flowerUpMoneyValue: 1000
+  _troubledFaceUpMoneyValue: 500
   _downMoneyValue: 500
   moneyText: {fileID: 253187546}
 --- !u!114 &471482545
@@ -771,13 +776,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d09519a0e9033544dab887edc2ec0364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PeopleMood
-  _flowerPercentage: 60
+  _flowerPercentage: 75
   flowerEffect: {fileID: 80061185}
-  _troubledFacePercentage: 70
+  _troubledFacePercentage: 83
   troubledFaceEffect: {fileID: 1624930967}
-  _angerPercentage: 80
+  _angerPercentage: 85
   angerEffect: {fileID: 2012160103}
-  _effectRoteSpan: 1
+  _effectRoteSpan: 0.75
   _effectRoteValue: -25
   handController: {fileID: 1397935752}
   powerMeter: {fileID: 471482543}
