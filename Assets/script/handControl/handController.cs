@@ -26,16 +26,13 @@ public class HandController : MonoBehaviour
     {
         leftTimer = 0;
         rightTimer = 0;
-        leftShougekiha.SetActive(false);
-        rightShougekiha.SetActive(false);
+        HideEffect();
     }
 
     private void OnDisable()
     {
         leftTimer = 0;
         rightTimer = 0;
-        leftShougekiha.SetActive(false);
-        rightShougekiha.SetActive(false);
         SuccessfulHit = false;
     }
 
@@ -157,5 +154,11 @@ public class HandController : MonoBehaviour
                 rightTimer = 0;
             }
         }
+    }
+
+    public void HideEffect()
+    {
+        leftShougekiha.SetActive(false);
+        rightShougekiha.SetActive(false);
     }
 }

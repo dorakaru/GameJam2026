@@ -30,7 +30,9 @@ public class Timer : MonoBehaviour
         else
         {
             _timer = 0;
+            handController.HideEffect();
             handController.enabled = false;
+            _peopleMood.HideEffect();
             _peopleMood.enabled = false;
         }
         
