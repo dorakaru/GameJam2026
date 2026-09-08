@@ -41,6 +41,14 @@ public class Money : MonoBehaviour
     //‚¨”N‹ÊŒ¸­ˆ—
     public void DownMoneyValue()
     {
-        playerMoney -= _downMoneyValue;
+        if (playerMoney > 0)
+        {
+            playerMoney -= _downMoneyValue;
+        }
+        
+        if (playerMoney < 0)
+        {
+            playerMoney = 0;
+        }
     }
 }

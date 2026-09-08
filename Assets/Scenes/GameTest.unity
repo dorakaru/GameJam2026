@@ -737,9 +737,11 @@ MonoBehaviour:
   checkCurrentPowerMeter: 0
   _currentPowerMeterUpValue: 0
   _editPowerMeterMax: 100
-  _baseOfExponentValue: 0.8
-  _exponentAddValue: 1.5
-  _powerMeterDownValue: 7
+  _baseOfExponentUpValue: 0.6
+  _upExponentAddValue: 2
+  _baseOfExponentDownValue: 1.1
+  _downExponentMultiValue: 0.01
+  _currentPowerMeterDownValue: 0
   handController: {fileID: 1397935752}
 --- !u!114 &471482544
 MonoBehaviour:

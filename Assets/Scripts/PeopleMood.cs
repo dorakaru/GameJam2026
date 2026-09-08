@@ -35,6 +35,13 @@ public class PeopleMood : MonoBehaviour
         effectMoved = false;
     }
 
+    private void OnDisable()
+    {
+        HideEffect();
+        effectTimer = 0;
+        effectMoved = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -90,15 +97,15 @@ public class PeopleMood : MonoBehaviour
     //エフェクトを非表示にする処理
     void HideEffect()
     {
-        flowerEffect.SetActive(false);
-        troubledFaceEffect.SetActive(false);
-        angerEffect.SetActive(false);
+        flowerEffect.GetComponent<SpriteRenderer>().enabled = false;
+        troubledFaceEffect.GetComponent<SpriteRenderer>().enabled = false;
+        angerEffect.GetComponent<SpriteRenderer>().enabled = false;
     }
 
     //エフェクトを表示して傾かせる処理
     void DisplayEffect(GameObject effect)
     {
-        effect.SetActive(true);
+        effect.GetComponent<SpriteRenderer>().enabled = true;
 
         if (effectTimer >= _effectRoteSpan)
         {
