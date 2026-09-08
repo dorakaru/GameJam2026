@@ -26,6 +26,12 @@ public class RuleManager : MonoBehaviour
 
     private bool countdownStarted = false;
 
+    AudioSource audioSource;
+    [SerializeField] AudioClip countdownSound;
+    [SerializeField] AudioClip startAudio;
+    int count = 3;
+    public bool isMusic;
+    public float timer;
     void Start()
     {
         ruleImage.SetActive(true);
@@ -34,6 +40,9 @@ public class RuleManager : MonoBehaviour
         count2.SetActive(false);
         count1.SetActive(false);
         startImage.SetActive(false);
+
+        audioSource = GetComponent<AudioSource>();
+        timer = 0;
     }
 
     void Update()
@@ -56,6 +65,7 @@ public class RuleManager : MonoBehaviour
 
             StartCoroutine(Countdown());
         }
+            
     }
 
     private IEnumerator Countdown()
@@ -82,6 +92,18 @@ public class RuleManager : MonoBehaviour
     private IEnumerator ShowImage(GameObject image,float startScale,float endScale)
     {
         image.SetActive(true);
+        
+
+        if (count != 0)
+        {
+            audioSource.PlayOneShot(countdownSound);
+            count--;
+        }
+        else if (!isMusic)
+        {
+            audioSource.PlayOneShot(startAudio);
+            isMusic = true;
+        }
 
         RectTransform rect = image.GetComponent<RectTransform>();
 
