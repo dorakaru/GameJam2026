@@ -1,40 +1,70 @@
+Ôªøusing System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    [Header("êßå¿éûä‘")]
     [SerializeField] private float _timeLimit;
 
-    [Header("")]
     [SerializeField] private float _timer;
-    [SerializeField] GameObject timerImage;
-    [SerializeField] HandController handController;
-    PeopleMood _peopleMood;
-    RectTransform _timerTransform;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameObject timerImage;
+    [SerializeField] private HandController handController;
+
+    [SerializeField] private GameObject finishImage;
+
+    [SerializeField] private float resultWaitTime = 2f;
+
+    [SerializeField] private string resultSceneName;
+
+    private PeopleMood _peopleMood;
+    private RectTransform _timerTransform;
+
+    private bool isFinished = false;
+
     void Start()
     {
         _timer = _timeLimit;
+
         _timerTransform = timerImage.GetComponent<RectTransform>();
+
         _peopleMood = GetComponent<PeopleMood>();
+
+        finishImage.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (isFinished)
+        {
+            return;
+        }
+
         if (_timer > 0)
         {
             _timer -= Time.deltaTime;
-            _timerTransform.localEulerAngles -= new Vector3 (0, 0, 360 / _timeLimit * Time.deltaTime);
+
+            _timerTransform.localEulerAngles -=
+                new Vector3(0, 0, 360 / _timeLimit * Time.deltaTime);
         }
         else
         {
             _timer = 0;
-            handController.HideEffect();
+
+            isFinished = true;
+
             handController.enabled = false;
-            _peopleMood.HideEffect();
             _peopleMood.enabled = false;
+
+            StartCoroutine(FinishSequence());
         }
-        
+    }
+
+    private IEnumerator FinishSequence()
+    {
+        finishImage.SetActive(true);
+
+        yield return new WaitForSeconds(resultWaitTime);
+
+        SceneManager.LoadScene(resultSceneName);
     }
 }

@@ -803,7 +803,7 @@ MonoBehaviour:
     dialogue: {fileID: 1379614429}
     portrait: {fileID: 1725964298}
     moneyBag: {fileID: 1568341881}
-  - minMoney: 190000
+  - minMoney: 180000
     dialogue: {fileID: 944460971}
     portrait: {fileID: 1725964298}
     moneyBag: {fileID: 405701682}
