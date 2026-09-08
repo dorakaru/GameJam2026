@@ -1,23 +1,35 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class ResultManager : MonoBehaviour
 {
+    [System.Serializable]
+    public class ResultData
+    {
+        public int minMoney;
+        public GameObject dialogue;
+        public GameObject portrait;
+        public GameObject moneyBag;
+    }
+
     [SerializeField] private GameObject resultImage;
+
+    [SerializeField] private TextMeshProUGUI moneyText;
+
+    [SerializeField] private ResultData[] results = new ResultData[5];
 
     [SerializeField] private GameObject count3;
     [SerializeField] private GameObject count2;
     [SerializeField] private GameObject count1;
     [SerializeField] private GameObject startImage;
 
-    // 在 Unity Inspector 中输入场景名
     [SerializeField] private string gameSceneName;
     [SerializeField] private string titleSceneName;
 
     [SerializeField] private float countInterval = 1f;
-
     [SerializeField] private float scaleDuration = 0.5f;
 
     [SerializeField] private float countStartScale = 0.3f;
@@ -28,6 +40,8 @@ public class ResultManager : MonoBehaviour
 
     private bool countdownStarted = false;
 
+    private ResultData currentResult;
+
     void Start()
     {
         resultImage.SetActive(true);
@@ -36,6 +50,11 @@ public class ResultManager : MonoBehaviour
         count2.SetActive(false);
         count1.SetActive(false);
         startImage.SetActive(false);
+
+        moneyText.text = Money.playerMoney.ToString();
+
+        HideAllResults();
+        ShowResult();
     }
 
     void Update()
@@ -53,9 +72,6 @@ public class ResultManager : MonoBehaviour
         if (Gamepad.current.rightTrigger.wasPressedThisFrame)
         {
             countdownStarted = true;
-
-            resultImage.SetActive(false);
-
             StartCoroutine(Countdown());
             return;
         }
@@ -63,6 +79,66 @@ public class ResultManager : MonoBehaviour
         if (Gamepad.current.leftTrigger.wasPressedThisFrame)
         {
             GoToTitle();
+        }
+    }
+
+    private void ShowResult()
+    {
+        int playerMoney = Money.playerMoney;
+
+        currentResult = null;
+
+        for (int i = 0; i < results.Length; i++)
+        {
+            if (playerMoney >= results[i].minMoney)
+            {
+                if (currentResult == null ||
+                    results[i].minMoney > currentResult.minMoney)
+                {
+                    currentResult = results[i];
+                }
+            }
+        }
+
+        if (currentResult == null)
+        {
+            return;
+        }
+
+        if (currentResult.dialogue != null)
+        {
+            currentResult.dialogue.SetActive(true);
+        }
+
+        if (currentResult.portrait != null)
+        {
+            currentResult.portrait.SetActive(true);
+        }
+
+        if (currentResult.moneyBag != null)
+        {
+            currentResult.moneyBag.SetActive(true);
+        }
+    }
+
+    private void HideAllResults()
+    {
+        for (int i = 0; i < results.Length; i++)
+        {
+            if (results[i].dialogue != null)
+            {
+                results[i].dialogue.SetActive(false);
+            }
+
+            if (results[i].portrait != null)
+            {
+                results[i].portrait.SetActive(false);
+            }
+
+            if (results[i].moneyBag != null)
+            {
+                results[i].moneyBag.SetActive(false);
+            }
         }
     }
 
@@ -83,6 +159,11 @@ public class ResultManager : MonoBehaviour
         yield return StartCoroutine(
             ShowImage(startImage, startImageStartScale, startImageEndScale)
         );
+
+        resultImage.SetActive(false);
+        moneyText.gameObject.SetActive(false);
+
+        HideAllResults();
 
         SceneManager.LoadScene(gameSceneName);
     }
