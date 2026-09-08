@@ -37,7 +37,6 @@ public class PeopleMood : MonoBehaviour
 
     private void OnDisable()
     {
-        HideEffect();
         effectTimer = 0;
         effectMoved = false;
     }
@@ -95,7 +94,7 @@ public class PeopleMood : MonoBehaviour
     }
 
     //エフェクトを非表示にする処理
-    void HideEffect()
+    public void HideEffect()
     {
         flowerEffect.GetComponent<SpriteRenderer>().enabled = false;
         troubledFaceEffect.GetComponent<SpriteRenderer>().enabled = false;
