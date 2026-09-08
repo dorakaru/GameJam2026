@@ -3,6 +3,7 @@ using UnityEngine;
 public class Sound : MonoBehaviour
 {
     [SerializeField] AudioClip shoulderHitSound;
+    [SerializeField] AudioClip BGM;
 
     [SerializeField] HandController handController;
 
@@ -11,6 +12,7 @@ public class Sound : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(BGM);
     }
 
     // Update is called once per frame
