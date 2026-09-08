@@ -27,6 +27,7 @@ public class PeopleMood : MonoBehaviour
 
     float effectTimer;
     bool effectMoved;
+    bool isAngry;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,8 +51,8 @@ public class PeopleMood : MonoBehaviour
         if (powerMeter.currentPowerMeter /powerMeter.powerMeterMax * 100 >= _angerPercentage)
         { //機嫌メーターが老人の怒り突入割合を越えた場合に処理
 
-            //エフェクト表示
-            DisplayEffect(angerEffect);
+            //怒ってる状態にする
+            isAngry = true;
 
             //肩を叩けたときに実行
             if (handController.SuccessfulHit)
@@ -62,17 +63,25 @@ public class PeopleMood : MonoBehaviour
         else if (powerMeter.currentPowerMeter / powerMeter.powerMeterMax * 100 >= _troubledFacePercentage)
         { //機嫌メーターが老人の困り顔突入割合を越えた場合に処理
 
-            //エフェクト表示
-            DisplayEffect(troubledFaceEffect);
+            if (!isAngry)
+            {
+                //エフェクト表示
+                DisplayEffect(troubledFaceEffect);
+            }
 
             //肩を叩けたときに実行
             if (handController.SuccessfulHit)
             {
-                money.TroubledFaceUpMoneyValue();
+                //怒ってたら減少に変える
+                if (isAngry)
+                    money.DownMoneyValue();
+                else
+                    money.TroubledFaceUpMoneyValue();
             }
         }
         else if (powerMeter.currentPowerMeter / powerMeter.powerMeterMax * 100 >= _flowerPercentage)
         { //機嫌メーターが老人のお花状態突入割合を越えた場合に処理
+            isAngry = false;
 
             //エフェクト表示
             DisplayEffect(flowerEffect);
@@ -90,6 +99,13 @@ public class PeopleMood : MonoBehaviour
             {
                 money.UpMoneyValue();
             }
+        }
+
+        //怒ったらお花状態までエフェクト表示
+        if (isAngry)
+        {
+            //エフェクト表示
+            DisplayEffect(angerEffect);
         }
     }
 
