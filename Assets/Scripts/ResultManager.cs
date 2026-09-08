@@ -42,6 +42,12 @@ public class ResultManager : MonoBehaviour
 
     private ResultData currentResult;
 
+    [SerializeField] AudioClip resultSound;
+    [SerializeField] AudioClip countdownSound;
+    [SerializeField] AudioClip startAudio;
+    int count = 3;
+    public bool isMusic;
+    AudioSource audioSource;
     void Start()
     {
         resultImage.SetActive(true);
@@ -55,6 +61,9 @@ public class ResultManager : MonoBehaviour
 
         HideAllResults();
         ShowResult();
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(resultSound);
     }
 
     void Update()
@@ -174,6 +183,17 @@ public class ResultManager : MonoBehaviour
         float endScale)
     {
         image.SetActive(true);
+
+        if (count != 0)
+        {
+            audioSource.PlayOneShot(countdownSound);
+            count--;
+        }
+        else if (!isMusic)
+        {
+            audioSource.PlayOneShot(startAudio);
+            isMusic = true;
+        }
 
         RectTransform rect = image.GetComponent<RectTransform>();
 

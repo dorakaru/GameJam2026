@@ -21,6 +21,9 @@ public class Timer : MonoBehaviour
 
     private bool isFinished = false;
 
+    [SerializeField] AudioClip finshSound;
+    AudioSource audioSource;
+
     void Start()
     {
         _timer = _timeLimit;
@@ -30,6 +33,7 @@ public class Timer : MonoBehaviour
         _peopleMood = GetComponent<PeopleMood>();
 
         finishImage.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -62,6 +66,7 @@ public class Timer : MonoBehaviour
     private IEnumerator FinishSequence()
     {
         finishImage.SetActive(true);
+        audioSource.PlayOneShot(finshSound);
 
         yield return new WaitForSeconds(resultWaitTime);
 

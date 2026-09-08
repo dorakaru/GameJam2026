@@ -725,6 +725,7 @@ MonoBehaviour:
   finishImage: {fileID: 1261127231}
   resultWaitTime: 2
   resultSceneName: Result
+  finshSound: {fileID: 8300000, guid: 0277d3d080c63cc41868cffd87ad955d, type: 3}
 --- !u!114 &471482543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sound
   shoulderHitSound: {fileID: 8300000, guid: dd7001e0186274c43aedad03e172e35a, type: 3}
+  BGM: {fileID: 8300000, guid: 3c9f5a07177af364390fcc9099fd1163, type: 3}
   handController: {fileID: 1397935752}
 --- !u!82 &471482547
 AudioSource:
