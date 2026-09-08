@@ -32,6 +32,9 @@ public class PowerMeter : MonoBehaviour
     [Header("減少値の二次関数の比例定数　※編集用")]
     [SerializeField] private float _quadraticValue;
 
+    [Header("二次関数に足す数(y=ax^2+bのbの値)　※編集用")]
+    [SerializeField] private float _quadraticAddValue;
+
     [Header("二次関数の処理に変えるボタン")]
     [SerializeField] private bool chageValue;
 
@@ -61,7 +64,7 @@ public class PowerMeter : MonoBehaviour
         _powerMeterUpValue = Mathf.Pow(_baseOfExponentUpValue, currentPowerMeter) + _upExponentAddValue;
         //機嫌メーターの減少値の計算式
         if (!chageValue)
-            _powerMeterDownValue = Mathf.Pow(_baseOfExponentDownValue, currentPowerMeter) * _downExponentMultiValue;
+            _powerMeterDownValue = Mathf.Pow(_baseOfExponentDownValue, currentPowerMeter) * _downExponentMultiValue + _quadraticAddValue;
         else
             _powerMeterDownValue = Mathf.Pow(currentPowerMeter, 2) * _quadraticValue;
 
