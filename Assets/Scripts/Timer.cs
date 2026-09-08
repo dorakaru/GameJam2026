@@ -9,12 +9,14 @@ public class Timer : MonoBehaviour
     [SerializeField] private float _timer;
     [SerializeField] GameObject timerImage;
     [SerializeField] HandController handController;
+    PeopleMood _peopleMood;
     RectTransform _timerTransform;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _timer = _timeLimit;
         _timerTransform = timerImage.GetComponent<RectTransform>();
+        _peopleMood = GetComponent<PeopleMood>();
     }
 
     // Update is called once per frame
@@ -29,6 +31,7 @@ public class Timer : MonoBehaviour
         {
             _timer = 0;
             handController.enabled = false;
+            _peopleMood.enabled = false;
         }
         
     }
